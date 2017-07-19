@@ -62,6 +62,13 @@
     return CGSizeMake(UIViewNoIntrinsicMetric, height);
 }
 
+//- (UIEdgeInsets)alignmentRectInsets
+//{
+////    UIEdgeInsets edage = [super alignmentRectInsets];
+////    return edage.left;
+//    return UIEdgeInsetsMake(0, 0, 10, 0);
+//}
+
 
 - (CGFloat)widthForTitle:(NSString *)title
 {
