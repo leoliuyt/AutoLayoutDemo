@@ -1,7 +1,7 @@
 //
 //  CustomView.m
 //  AutoLayoutDemo
-//
+//  customView的固有高度 由title字体的高度决定
 //  Created by leoliu on 2017/7/16.
 //  Copyright © 2017年 LL. All rights reserved.
 //
@@ -24,7 +24,6 @@
 {
     self = [super init];
     self.backgroundColor = [UIColor orangeColor];
-//    [self ll_makeConstraints];
     return self;
 }
 
@@ -57,19 +56,12 @@
 
 - (CGSize)intrinsicContentSize
 {
-    CGFloat height = [self widthForTitle:self.title];
+    CGFloat height = [self heightForTitle:self.title];
     //如果给定纬度没有固定size 那个可以将给定纬度设置成UIViewNoIntrinsicMetric
     return CGSizeMake(UIViewNoIntrinsicMetric, height);
 }
 
-//- (UIEdgeInsets)alignmentRectInsets
-//{
-////    UIEdgeInsets edage = [super alignmentRectInsets];
-////    return edage.left;
-//    return UIEdgeInsetsMake(0, 0, 10, 0);
-//}
-
-- (CGFloat)widthForTitle:(NSString *)title
+- (CGFloat)heightForTitle:(NSString *)title
 {
    CGRect rect = [title boundingRectWithSize:CGSizeMake(MAXFLOAT, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:20.]} context:nil];
     return rect.size.height;

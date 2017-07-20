@@ -61,3 +61,5 @@ iOSInjectionProject/
 /AutoLayoutDemo/.DS_Store
 .DS_Store
 AutoLayoutDemo/.DS_Store
+AutoLayoutDemo/AutoLayoutDemo.xcworkspace/xcuserdata/leoliu.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+*.xcbkptlist

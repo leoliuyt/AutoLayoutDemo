@@ -18,23 +18,17 @@
 }
 */
 
-//- (CGSize)intrinsicContentSize
-//{
-//    CGSize size = [super intrinsicContentSize];
-//    return size;
-//}
-//
-- (UIEdgeInsets)alignmentRectInsets
+- (CGSize)intrinsicContentSize
 {
-    return UIEdgeInsetsMake(0, 0, -10, 0);
+    CGSize size = [super intrinsicContentSize];
+    return size;
 }
 
 
 //label 在Font\Text 发生变化的时候会调用此方法 移除原有的固定size
 // 重新调用intrinsicContentSize 根据新的Font、Text 计算并设置固定size
-
-//-(void)invalidateIntrinsicContentSize{
-//    [super invalidateIntrinsicContentSize];
-//}
+-(void)invalidateIntrinsicContentSize{
+    [super invalidateIntrinsicContentSize];
+}
 
 @end
