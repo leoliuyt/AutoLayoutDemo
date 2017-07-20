@@ -69,7 +69,6 @@
 //    return UIEdgeInsetsMake(0, 0, 10, 0);
 //}
 
-
 - (CGFloat)widthForTitle:(NSString *)title
 {
    CGRect rect = [title boundingRectWithSize:CGSizeMake(MAXFLOAT, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:20.]} context:nil];
