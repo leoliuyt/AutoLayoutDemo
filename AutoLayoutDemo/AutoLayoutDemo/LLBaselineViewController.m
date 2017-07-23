@@ -7,6 +7,8 @@
 //
 
 #import "LLBaselineViewController.h"
+#import "LLBaselineView.h"
+
 
 @interface LLBaselineViewController ()
 
@@ -17,6 +19,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    LLBaselineView *baselineView = [LLBaselineView new];
+    baselineView.titleLabel.text = @"阿里健康的";
+    baselineView.frame = CGRectMake(0, 64, 100, 40);
+    [self.view addSubview:baselineView];
 }
 
 - (void)didReceiveMemoryWarning {

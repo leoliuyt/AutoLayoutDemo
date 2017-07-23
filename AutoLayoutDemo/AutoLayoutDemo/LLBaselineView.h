@@ -10,4 +10,6 @@
 
 @interface LLBaselineView : UIView
 
+@property (nonatomic, strong) UILabel *titleLabel;
+
 @end
