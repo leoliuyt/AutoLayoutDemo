@@ -7,8 +7,12 @@
 //
 
 #import "LLBaselineViewController.h"
+#import "Masonry.h"
 
 @interface LLBaselineViewController ()
+
+@property (nonatomic, strong) UILabel *label;
+@property (nonatomic, strong) UIButton *btn;
 
 @end
 
@@ -16,7 +20,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+//    [self.label mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.equalTo(self.view).offset(10.);
+//        make.top.equalTo(self.view).offset(80.);
+//        make.width.equalTo(@40.);
+//    }];
+//    
+//    self.label.text = @"是空老师看见了打开就菲利克斯";
+//
+    
+//    [self.btn mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.equalTo(self.label.mas_right).offset(10.);
+//        make.firstBaseline.equalTo(self.label.mas_firstBaseline);
+//    }];
+    [self.btn setTitle:@"苦上加苦" forState:UIControlStateNormal];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,14 +41,27 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (UILabel *)label
+{
+    if(!_label){
+        _label = [[UILabel alloc]init];
+        _label.numberOfLines = 0;
+        _label.textColor = [UIColor blackColor];
+        _label.font = [UIFont systemFontOfSize:12.];
+        [self.view addSubview:_label];
+    }
+    return _label;
 }
-*/
+
+- (UIButton *)btn
+{
+    if(!_btn){
+        _btn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [self.view addSubview:_btn];
+    }
+    return _btn;
+}
 
 @end

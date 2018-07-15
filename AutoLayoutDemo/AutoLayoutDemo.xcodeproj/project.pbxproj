@@ -190,6 +190,7 @@
 				TargetAttributes = {
 					9E8178541F1BA8D2005F2473 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = XWNPFKK4U5;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -413,6 +414,7 @@
 			baseConfigurationReference = A0C190C2E6EB9EDB726140E6 /* Pods-AutoLayoutDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XWNPFKK4U5;
 				INFOPLIST_FILE = AutoLayoutDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.msb.AutoLayoutDemo;
@@ -425,6 +427,7 @@
 			baseConfigurationReference = 8F795922A21F103A4F369E06 /* Pods-AutoLayoutDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XWNPFKK4U5;
 				INFOPLIST_FILE = AutoLayoutDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.msb.AutoLayoutDemo;
